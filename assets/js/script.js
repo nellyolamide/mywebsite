@@ -59,11 +59,11 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | CodeWithTanveer";
+            document.title = "Portfolio | CodeWithNelson";
             $("#favicon").attr("href", "assets/images/favicon.jpg");
         }
         else {
-            document.title = "Portfolio | Tanveer Ahmad";
+            document.title = "Portfolio | Olamide Nelson";
             $("#favicon").attr("href", "assets/images/favicon.jpg");
         }
     });
