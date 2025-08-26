@@ -1184,6 +1184,8 @@ form .button-area {
     transform: scale(1.1);
   }
 }
+
+
 @media (max-width: 450px) {
   .footer .box-container .box {
     margin: 1.5rem;
@@ -1228,3 +1230,49 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Center .home content on small screens */
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home .image img {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .row {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+    padding: 0.5rem !important;
+    margin-bottom: 7rem !important;
+    text-align: center;
+  }
+  .about .row .image {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about .row .image img {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    mix-blend-mode: normal;
+  }
+  .about .row .content {
+    padding: 1rem !important;
+    text-align: center !important;
+    width: 100%;
+  }
+  .about .row .content .box-container {
+    gap: 0;
+    justify-content: center;
+  }
+}
